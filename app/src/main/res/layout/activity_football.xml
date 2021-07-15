@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/txt_team1"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Team 1"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/bottom_bar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_back"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <TextView
+            android:id="@+id/txt_team2"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Team 2"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toEndOf="@id/txt_team1"
+            app:layout_constraintTop_toTopOf="@id/txt_team1" />
+
+        <TextView
+            android:id="@+id/txt_team1Counter"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/bottom_bar"
+            app:layout_constraintEnd_toEndOf="@id/txt_team1"
+            app:layout_constraintStart_toStartOf="@+id/txt_team1"
+            app:layout_constraintTop_toBottomOf="@id/txt_team1"
+            app:layout_constraintVertical_bias="0.1" />
+
+
+        <TextView
+           android:id="@+id/txt_dvojtecka"
+            android:layout_width="90dp"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:text=":"
+            android:textColor="@color/black"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/txt_team2Counter"
+            app:layout_constraintStart_toEndOf="@id/txt_team1Counter"
+            app:layout_constraintTop_toTopOf="@id/txt_team1Counter" />
+
+
+        <TextView
+            android:id="@+id/txt_team2Counter"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/bottom_bar"
+            app:layout_constraintEnd_toEndOf="@id/txt_team2"
+            app:layout_constraintStart_toStartOf="@+id/txt_team2"
+            app:layout_constraintTop_toBottomOf="@id/txt_team2"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:src="@mipmap/ic_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/team1Increase"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:src="@mipmap/ic_plus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/txt_team1Counter"
+            app:layout_constraintStart_toStartOf="@id/txt_team1Counter"
+            app:layout_constraintTop_toBottomOf="@id/txt_team1Counter"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <ImageButton
+            android:id="@+id/team1Remove"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:src="@mipmap/ic_minus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/team1Increase"
+            app:layout_constraintStart_toStartOf="@id/team1Increase"
+            app:layout_constraintTop_toBottomOf="@id/team1Increase"
+            app:layout_constraintVertical_bias="0.2" />
+
+        <ImageButton
+            android:id="@+id/team2Increase"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:src="@mipmap/ic_plus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/txt_team2Counter"
+            app:layout_constraintStart_toStartOf="@id/txt_team2Counter"
+            app:layout_constraintTop_toBottomOf="@id/txt_team2Counter"
+            app:layout_constraintVertical_bias="0.1" />
+
+        <ImageButton
+            android:id="@+id/team2Remove"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:src="@mipmap/ic_minus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/team2Increase"
+            app:layout_constraintStart_toStartOf="@id/team2Increase"
+            app:layout_constraintTop_toBottomOf="@id/team2Increase"
+            app:layout_constraintVertical_bias="0.2" />
+
+        <ImageButton
+            android:id="@+id/btn_again"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:src="@mipmap/ic_again"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/txt_dvojtecka"
+            app:layout_constraintStart_toStartOf="@id/txt_dvojtecka"
+            app:layout_constraintTop_toBottomOf="@id/txt_dvojtecka"
+            app:layout_constraintVertical_bias="0.25" />
+
+        <Button
+            android:id="@+id/btn_finish"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/white"
+            android:text="Finish!"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/txt_dvojtecka"
+            app:layout_constraintStart_toStartOf="@id/txt_dvojtecka"
+            app:layout_constraintTop_toBottomOf="@id/txt_dvojtecka"
+            app:layout_constraintVertical_bias="0.7" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#4284f5"
+                android:weightSum="3">
+
+                <ImageButton
+                    android:id="@+id/btn_games"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#4284f5"
+                    android:src="@mipmap/ic_games"
+                    app:backgroundTint="#4284f5" />
+
+                <ImageButton
+                    android:id="@+id/btn_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#4284f5"
+                    android:src="@mipmap/ic_score"
+                    app:backgroundTint="#4284f5" />
+
+                <ImageButton
+                    android:id="@+id/btn_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#4284f5"
+                    android:src="@mipmap/ic_setting"
+                    app:backgroundTint="#4284f5" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

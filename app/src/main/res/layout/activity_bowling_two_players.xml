@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Bowling_players"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:src="@mipmap/ic_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/nameOfthePlayers"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            android:text="Player Name"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/bottom_bar"
+            app:layout_constraintStart_toStartOf="@+id/btn_back"
+            app:layout_constraintTop_toBottomOf="@id/btn_back"
+            app:layout_constraintVertical_bias="0.1" />
+
+
+        <TextView
+            android:id="@+id/firstRound"
+            android:layout_width="35dp"
+            android:layout_height="60dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/nameOfthePlayers"
+            app:layout_constraintTop_toTopOf="@id/nameOfthePlayers" />
+
+        <TextView
+            android:id="@+id/secondRound"
+            android:layout_width="35dp"
+            android:layout_height="60dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/firstRound"
+            app:layout_constraintTop_toTopOf="@id/firstRound" />
+
+        <TextView
+            android:id="@+id/thirdRound"
+            android:layout_width="35dp"
+            android:layout_height="60dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/secondRound"
+            app:layout_constraintTop_toTopOf="@id/secondRound" />
+
+        <TextView
+            android:id="@+id/fourthRound"
+            android:layout_width="35dp"
+            android:layout_height="60dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            android:text="4"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/thirdRound"
+            app:layout_constraintTop_toTopOf="@id/thirdRound" />
+
+        <TextView
+            android:id="@+id/fifthRound"
+            android:layout_width="35dp"
+            android:layout_height="60dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            android:text="5"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/fourthRound"
+            app:layout_constraintTop_toTopOf="@id/fourthRound" />
+
+        <TextView
+            android:id="@+id/sixthRound"
+            android:layout_width="35dp"
+            android:layout_height="60dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            android:text="6"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/fifthRound"
+            app:layout_constraintTop_toTopOf="@id/fifthRound" />
+
+        <TextView
+            android:id="@+id/seventhRound"
+            android:layout_width="35dp"
+            android:layout_height="60dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            android:text="7"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/sixthRound"
+            app:layout_constraintTop_toTopOf="@id/sixthRound" />
+
+        <TextView
+            android:id="@+id/eightRound"
+            android:layout_width="35dp"
+            android:layout_height="60dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            android:text="8"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/seventhRound"
+            app:layout_constraintTop_toTopOf="@id/seventhRound" />
+
+        <TextView
+            android:id="@+id/neinghtRound"
+            android:layout_width="35dp"
+            android:layout_height="60dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            android:text="9"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/eightRound"
+            app:layout_constraintTop_toTopOf="@id/eightRound" />
+
+        <TextView
+            android:id="@+id/tenRound"
+            android:layout_width="35dp"
+            android:layout_height="60dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            android:text="10"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/neinghtRound"
+            app:layout_constraintTop_toTopOf="@id/neinghtRound" />
+
+
+        <TextView
+            android:id="@+id/nameOfTheFirstPlayer"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            android:text="Player 1"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/nameOfthePlayers"
+            app:layout_constraintStart_toStartOf="@id/nameOfthePlayers"
+            app:layout_constraintVertical_bias="0.2" />
+
+
+        <TextView
+            android:id="@+id/FirstPlayerfirstRoundBox"
+            android:layout_width="35dp"
+            android:layout_height="60dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/nameOfTheFirstPlayer"
+            app:layout_constraintTop_toTopOf="@id/nameOfTheFirstPlayer" />
+
+
+        <TextView
+            android:id="@+id/FirstPlayersecondRoundBox"
+            android:layout_width="35dp"
+            android:layout_height="60dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/FirstPlayerfirstRoundBox"
+            app:layout_constraintTop_toTopOf="@id/FirstPlayerfirstRoundBox" />
+
+        <TextView
+            android:id="@+id/FirstPlayerthirdRoundBox"
+            android:layout_width="35dp"
+            android:layout_height="60dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/FirstPlayersecondRoundBox"
+            app:layout_constraintTop_toTopOf="@id/FirstPlayersecondRoundBox" />
+
+        <TextView
+            android:id="@+id/FirstPlayerfourthRoundBox"
+            android:layout_width="35dp"
+            android:layout_height="60dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/FirstPlayerthirdRoundBox"
+            app:layout_constraintTop_toTopOf="@id/FirstPlayerthirdRoundBox" />
+
+        <TextView
+            android:id="@+id/FirstPlayerfifthRoundBox"
+            android:layout_width="35dp"
+            android:layout_height="60dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/FirstPlayerfourthRoundBox"
+            app:layout_constraintTop_toTopOf="@id/FirstPlayerfourthRoundBox" />
+
+        <TextView
+            android:id="@+id/FirstPlayersixthRoundBox"
+            android:layout_width="35dp"
+            android:layout_height="60dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/FirstPlayerfifthRoundBox"
+            app:layout_constraintTop_toTopOf="@id/FirstPlayerfifthRoundBox" />
+
+        <TextView
+            android:id="@+id/FirstPlayerseventhRoundBox"
+            android:layout_width="35dp"
+            android:layout_height="60dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/FirstPlayersixthRoundBox"
+            app:layout_constraintTop_toTopOf="@id/FirstPlayersixthRoundBox" />
+
+        <TextView
+            android:id="@+id/FirstPlayereithRoundBox"
+            android:layout_width="35dp"
+            android:layout_height="60dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/FirstPlayerseventhRoundBox"
+            app:layout_constraintTop_toTopOf="@id/FirstPlayerseventhRoundBox" />
+
+        <TextView
+            android:id="@+id/FirstPlayerneinghtRoundBox"
+            android:layout_width="35dp"
+            android:layout_height="60dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/FirstPlayereithRoundBox"
+            app:layout_constraintTop_toTopOf="@id/FirstPlayereithRoundBox" />
+
+        <TextView
+            android:id="@+id/FirstPlayertenRoundBox"
+            android:layout_width="35dp"
+            android:layout_height="60dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/FirstPlayerneinghtRoundBox"
+            app:layout_constraintTop_toTopOf="@id/FirstPlayerneinghtRoundBox" />
+
+
+        <TextView
+            android:id="@+id/nameOfTheSecondPlayer"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            android:text="Player 2"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/nameOfTheFirstPlayer"
+            app:layout_constraintTop_toBottomOf="@id/nameOfTheFirstPlayer" />
+
+        <TextView
+            android:id="@+id/SecondPlayerfirstRoundBox"
+            android:layout_width="35dp"
+            android:layout_height="60dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/nameOfTheSecondPlayer"
+            app:layout_constraintTop_toTopOf="@id/nameOfTheSecondPlayer" />
+
+        <TextView
+            android:id="@+id/SecondPlayersecondRoundBox"
+            android:layout_width="35dp"
+            android:layout_height="60dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/SecondPlayerfirstRoundBox"
+            app:layout_constraintTop_toTopOf="@id/SecondPlayerfirstRoundBox" />
+
+        <TextView
+            android:id="@+id/SecondPlayerthirdRoundBox"
+            android:layout_width="35dp"
+            android:layout_height="60dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/SecondPlayersecondRoundBox"
+            app:layout_constraintTop_toTopOf="@id/SecondPlayersecondRoundBox" />
+
+        <TextView
+            android:id="@+id/SecondPlayerfourthRoundBox"
+            android:layout_width="35dp"
+            android:layout_height="60dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/SecondPlayerthirdRoundBox"
+            app:layout_constraintTop_toTopOf="@id/SecondPlayerthirdRoundBox" />
+
+        <TextView
+            android:id="@+id/SecondPlayerfifthRoundBox"
+            android:layout_width="35dp"
+            android:layout_height="60dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/SecondPlayerfourthRoundBox"
+            app:layout_constraintTop_toTopOf="@id/SecondPlayerfourthRoundBox" />
+
+        <TextView
+            android:id="@+id/SecondPlayersixthRoundBox"
+            android:layout_width="35dp"
+            android:layout_height="60dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/SecondPlayerfifthRoundBox"
+            app:layout_constraintTop_toTopOf="@id/SecondPlayerfifthRoundBox" />
+
+        <TextView
+            android:id="@+id/SecondPlayerseventhRoundBox"
+            android:layout_width="35dp"
+            android:layout_height="60dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/SecondPlayersixthRoundBox"
+            app:layout_constraintTop_toTopOf="@id/SecondPlayersixthRoundBox" />
+
+        <TextView
+            android:id="@+id/SecondPlayereithRoundBox"
+            android:layout_width="35dp"
+            android:layout_height="60dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/SecondPlayerseventhRoundBox"
+            app:layout_constraintTop_toTopOf="@id/SecondPlayerseventhRoundBox" />
+
+        <TextView
+            android:id="@+id/SecondPlayerneinghtRoundBox"
+            android:layout_width="35dp"
+            android:layout_height="60dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/SecondPlayereithRoundBox"
+            app:layout_constraintTop_toTopOf="@id/SecondPlayereithRoundBox" />
+
+        <TextView
+            android:id="@+id/SecondPlayertenRoundBox"
+            android:layout_width="35dp"
+            android:layout_height="60dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/SecondPlayerneinghtRoundBox"
+            app:layout_constraintTop_toTopOf="@id/SecondPlayerneinghtRoundBox" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#4284f5"
+                android:weightSum="3">
+
+                <ImageButton
+                    android:id="@+id/btn_games"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#4284f5"
+                    android:src="@mipmap/ic_games"
+                    app:backgroundTint="#4284f5" />
+
+                <ImageButton
+                    android:id="@+id/btn_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#4284f5"
+                    android:src="@mipmap/ic_score"
+                    app:backgroundTint="#4284f5" />
+
+                <ImageButton
+                    android:id="@+id/btn_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#4284f5"
+                    android:src="@mipmap/ic_setting"
+                    app:backgroundTint="#4284f5" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <Button
+            android:id="@+id/btn_player1Throw"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/white"
+            android:text="Player 1 throw"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/nameOfTheSecondPlayer"
+            app:layout_constraintTop_toBottomOf="@id/nameOfTheSecondPlayer"
+            app:layout_constraintVertical_bias="0.4"
+            app:layout_constraintHorizontal_bias="0.1"
+            />
+
+        <Button
+            android:id="@+id/btn_player2Throw"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/white"
+            android:text="Player 2 throw"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center"
+            app:layout_constraintStart_toEndOf="@id/btn_player1Throw"
+            app:layout_constraintTop_toTopOf="@id/btn_player1Throw"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/btn_player1Throw"
+            app:layout_constraintHorizontal_bias="0.6"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
